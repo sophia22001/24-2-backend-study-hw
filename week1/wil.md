@@ -35,8 +35,8 @@
 ### HTTP 헤더와 바디
 
 - HTTP 데이터는 HTTP 헤더와 HTTP 바디로 구성된다.
-- **HTTP 헤더**: 언제, 누가, 어떤 경로로 보내는 지, HTTP method가 무엇인지 등의 통신에 대한 정보
-- **HTTP 바디**: 주고 받으려는 데이터 (보통 json)
+  - **HTTP 헤더**: 언제, 누가, 어떤 경로로 보내는 지, HTTP method가 무엇인지 등의 통신에 대한 정보
+  - **HTTP 바디**: 주고 받으려는 데이터 (보통 json)
 
 ### 상태 코드
 
@@ -69,3 +69,27 @@ HTTP는 단순한 웹의 규칙이므로 구체적인 통신 방법은 API로 �
 3. API 서버 프로그램 작성
 4. 테스트
 5. 배포
+
+---
+
+## API 명세서
+
+- 할 일 관리 API
+
+  - 할 일 생성: POST /todo
+  - 할 일 조회: GET /todo
+  - 할 일 수정: PATCH /todo/{todo_id}
+  - 할 일 삭제: DELETE /todo/{todo_id}
+  - 할 일 체크: POST /todo/{todo_id}/check
+  - 할 일 체크 해제: POST /todo/{todo_id}/uncheck
+
+- 유저 관리 API
+
+  - 회원 가입: POST /register
+  - 로그인: POST /login
+
+- 친구 API
+  - 친구 추가: POST /friend
+  - 친구 조회: GET /friend/{friend_id}
+  - 친구 삭제: DELETE /friend/{friend_id}
+  - 특정 친구의 할 일 조회: GET /friend/{friend_id}/todo
