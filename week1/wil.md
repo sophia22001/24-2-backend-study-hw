@@ -93,3 +93,7 @@ HTTP는 단순한 웹의 규칙이므로 구체적인 통신 방법은 API로 �
   - 친구 조회: GET /friend/{friend_id}
   - 친구 삭제: DELETE /friend/{friend_id}
   - 특정 친구의 할 일 조회: GET /friend/{friend_id}/todo
+
+## 어플리케이션 실행 사진
+
+![alt text](image.png)
